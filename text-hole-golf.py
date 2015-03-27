@@ -1,0 +1,1 @@
+golf=lambda t:sum(1 for i in range(1,len(t)-1) for j in range(1,len(t[i])-1) if t[i][j]==" "and all(len(t[i+k])>j+l and t[i+k][j+l]!=" " for k,l in [(1,0),(0,1),(-1,0),(0,-1),(1,-1),(-1,1),(1,1),(-1,-1)]))
